@@ -26,7 +26,11 @@ namespace Laba_4
             do
             {
                 Console.Write(message);
+                Console.ForegroundColor = ConsoleColor.Green;
                 isConvert = int.TryParse(Console.ReadLine(), out number);
+                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.BackgroundColor = ConsoleColor.DarkBlue;
                 if (!isConvert)
                     Console.WriteLine(errorMessage);
                 else if (number < min || number > max)
@@ -471,3 +475,4 @@ namespace Laba_4
         }
     }
 }
+
