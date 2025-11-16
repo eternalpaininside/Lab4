@@ -468,7 +468,7 @@ namespace Laba_4
                                     case true:
                                         Console.Clear();
                                         Console.WriteLine("Единичный массив уже считается отсортированным, хотите продолжить?");
-                                        string[] fifthInsideMenu = { "Хочу продлжить", "Хочу вернуться в основное меню " };
+                                        string[] fifthInsideMenu = { "Хочу продолжить", "Хочу вернуться в основное меню " };
                                         PrintMenu(fifthInsideMenu);
                                         int choise6 = ReadInt("Введите номер команды ", "Ошибка ввода номера команды!", "Команды с таким номером нет. ", 1, fifthInsideMenu.Length);
                                         if (choise6 == 2)
@@ -580,3 +580,4 @@ namespace Laba_4
         }
     }
 }
+
