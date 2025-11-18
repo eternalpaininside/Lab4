@@ -122,17 +122,13 @@ namespace Laba_4
             bool isFirstMax = false;
             for (int i = 0; i < arr.Length; i++)
             {
-                if (isFirstMax)
+                if (isFirstMax || max != arr[i])
                 {
                     temp[j++] = arr[i];
                 }
                 else if (max == arr[i])
                 {
                     isFirstMax = true;
-                }
-                else if (max != arr[i])
-                {
-                    temp[j++] = arr[i];
                 }
             }
             PrintArray(arr, "Изначальный массив: ");
@@ -662,3 +658,4 @@ namespace Laba_4
         }
     }
 }
+
