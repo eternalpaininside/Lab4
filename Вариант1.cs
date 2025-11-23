@@ -786,7 +786,7 @@ namespace Laba_4
                                     int indexChoise5 = SearchBinary(arr, choise5) + 1; // +1 для вывода номера элемента, а не индекса
                                     switch (indexChoise5)
                                     {
-                                        case 0: // Если BinarySearch вернул -1, то indexChoise5 будет 0
+                                        case 0: // Если SearchBinary вернул -1, то indexChoise5 будет 0
                                             Console.WriteLine("Такого элемента нет в массиве.");
                                             break;
                                         default:
@@ -824,5 +824,6 @@ namespace Laba_4
 }
     }
 }
+
 
 
