@@ -378,7 +378,7 @@ namespace Laba_4
     }
 
     /// <summary>
-    /// Выполняет операцию разбиения (partitioning) массива согласно схеме Ломуто.
+    /// Выполняет операцию разбиения массива согласно.
     /// Выбирает последний элемент подмассива как опорный (pivot),
     /// переставляет элементы таким образом, чтобы все элементы меньше опорного
     /// оказались до него, а все элементы больше или равные опорному — после него.
@@ -500,7 +500,7 @@ namespace Laba_4
    /// <param name="arr">Отсортированный массив, в котором осуществляется поиск.</param>
    /// <param name="number">Число, которое необходимо найти.</param>
    /// <returns>Индекс найденного числа в массиве или -1, если число не найдено.</returns>
-    static int BinarySearch(int[] arr, int number)
+    static int SearchBinary(int[] arr, int number)
     {
         int count = 0; // Счетчик сравнений
         int left = 0;
@@ -783,7 +783,7 @@ namespace Laba_4
                                     Console.Clear();
                                     PrintArray(arr, "Ваш нынешний массив: ");
                                     int choise5 = ReadInt("Введите число, которое вы хотите найти: ");
-                                    int indexChoise5 = BinarySearch(arr, choise5) + 1; // +1 для вывода номера элемента, а не индекса
+                                    int indexChoise5 = SearchBinary(arr, choise5) + 1; // +1 для вывода номера элемента, а не индекса
                                     switch (indexChoise5)
                                     {
                                         case 0: // Если BinarySearch вернул -1, то indexChoise5 будет 0
@@ -824,4 +824,5 @@ namespace Laba_4
 }
     }
 }
+
 
